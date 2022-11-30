@@ -1,9 +1,13 @@
-function App() {
-  return (
-    <div className="App">
-      <h2>Client Online Store</h2>
-    </div>
-  );
-}
+import React from 'react';
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <AppRouter/>
+        </BrowserRouter>
+    );
+};
 
 export default App;
