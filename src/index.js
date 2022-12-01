@@ -15,5 +15,3 @@ root.render(
         <App />
     </Context.Provider>
 );
-
-// https://youtu.be/H2GCkRF9eko?list=PL6DxKON1uLOHya4bDIynPTCwZHrezUlFs&t=5092
