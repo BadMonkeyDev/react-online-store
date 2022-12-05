@@ -18,10 +18,8 @@ const NavBar = observer(() => {
                         <Button
                             variant={'outline-light'}
                             className='me-2'
-                            onClick={() => {
-                                history(ADMIN_ROUTE)
-                            }
-                        }
+                            onClick={() => {history(ADMIN_ROUTE)
+                                }}
                         >
                             Адміністрування
                         </Button>
