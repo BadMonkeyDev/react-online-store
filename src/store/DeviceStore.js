@@ -21,6 +21,9 @@ export default class DeviceStore {
             {id: 3, name: "Мультитул Xiaomi Nato Multi-Function Wrench Knife Stainless Steel Primary Color Silver", price: 1159, rating: 5, img: "http://localhost:5000/813dbb92-0da4-451e-a86f-09b637db6e13.jpg"},
             {id: 4, name: "Холдер Xiaomi CooWoo T100 Gravity Car Phone Holder Space Silver (T100)", price: 405, rating: 5, img: "http://localhost:5000/f538c5d2-20b4-4a35-b85c-a3842e7147f7.jpg"},
         ]
+        this._selectedType = {}
+        this._selectedBrand = {}
+
         makeAutoObservable(this)
     }
 
@@ -36,6 +39,14 @@ export default class DeviceStore {
         this._devices = devices
     }
 
+    setSelectedType(type) {
+        this._selectedType = type
+    }
+
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand
+    }
+
     get types() {
         return this._types;
     }
@@ -46,5 +57,13 @@ export default class DeviceStore {
 
     get devices() {
         return this._devices;
+    }
+
+    get selectedType() {
+        return this._selectedType
+    }
+
+    get selectedBrand() {
+        return this._selectedBrand
     }
 }
