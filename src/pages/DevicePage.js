@@ -14,7 +14,7 @@ const DevicePage = () => {
         <Container className={'mt-3'}>
             <div className={'d-flex flex-wrap justify-content-between gap-5'}>
                 <Col>
-                    <Image width={300} height={300} src={`${process.env.REACT_APP_API_URL}/${device.img}`} />
+                    <Image width={300} height={300} src={process.env.REACT_APP_API_URL + device.img} />
                 </Col>
                 <Col>
                     <div className={'d-flex flex-column'}>
