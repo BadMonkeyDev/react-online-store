@@ -5,7 +5,7 @@ import {SHOP_ROUTE} from "../utils/consts";
 import {Context} from "../index";
 
 const AppRouter = () => {
-    const {user, device} = useContext(Context)
+    const {user} = useContext(Context)
     return (
         <Routes>
             {user.isAuth && authRoutes.map(({path, Component}) =>

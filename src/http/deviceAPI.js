@@ -48,6 +48,10 @@ export const readDevice = async (id) => {
     const {data} = await $host.get('api/device/' + id)
     return data
 }
+export const readDevicesByIds = async (array) => {
+    const {data} = await $host.post('api/device/getArray', {ids: array})
+    return data
+}
 export const updateDevice = async () => {
 
 }
